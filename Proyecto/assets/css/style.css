@@ -1,0 +1,540 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+
+/* para pasar a mayusculas text-transform:uppercase*/
+/*overflow:hidden es para que corte la imangen cuando sale de la box/ overflow:scroll para bajar pero hay que ponerle altura y si ponemos overflow auto la barra de scroll depende si el texto se pasa del tamaño del contenedor*/
+/* display in line: es para pasar un elemento en bloque a linea*/
+/* para darle enfasis a una sola palabra <span>la palabra</span> y luego la editamos con por ejemplo .p span*/
+/*el parrafo siempre en display block y el span es en linea*/
+/* inlineblock es la suma de los dos en linea y en bloque.*/
+/*Display: none es para que desaparezca a lo que pongo/*
+/* display block es para que el elemento sea un bloque*/
+/* si teine texto adentro no es recomendable ponerle altura*/
+/* position: fixed; esto es para que la barra escrolee con el contenido, es decir se quede fija siempre visible en nuestra pagina*/
+/* position sticky es para que la barra de navegacion se trabe arriba de la pagina*/
+/* Position absolut hace que el espacio de la caja sea ocupado por el contenido que tiene abajo, es decir se superpone el contenido (por ejemplo botones de descuento )*/
+
+
+
+
+.navbar{ 
+    padding: 20px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+
+}
+
+.navbar > ul {
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    margin-right: 70px;
+}
+
+
+.navbar> ul> li{
+    position: relative;
+    border-right: 50px;
+
+
+}
+
+.navbar > ul > li:hover ul{
+    max-height: 300px;
+    transition: 0.5s;
+}
+
+
+.navbar ul li a{
+    display: block;
+    text-decoration: none;
+    color: #fbfae6;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.navbar > ul > li > ul{
+    max-height: 0;
+    overflow: hidden;
+    position: absolute ;
+    background-color: black;
+    list-style: none;
+    left: 8px;
+}
+
+.logo{
+    margin-left: 70px;
+    padding: 25px
+}
+
+.headerindex .contenedor2 > h4{
+    position: absolute;
+    color: #fff;
+    top: 20%;
+    left: 12%;
+    text-shadow: 2px 2px 5px black;
+    font-size: 25px;
+    margin: 10px;
+}
+.headerindex .contenedor2 p{
+    position: absolute;
+    color: #fff;
+    top: 30%;
+    left: 12%;
+    text-shadow: 2px 2px 5px black;
+    font-size: 20px;
+    margin: 10px;
+}
+.headerindex .contenedor2 .btn{
+    top: 50%;
+    left: 12%;
+    margin: 10px;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.title{
+    text-align: center;
+    font-size: 40px;
+    color: #6a6a6a;
+    margin-top: 100px;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    height: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    
+}
+
+.container .card{
+    width: 330px;
+    height: 380px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+
+}
+
+.container .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container .card img{
+    margin-top: 20px;
+    width: 330px;
+    height: 220px;
+}
+
+
+.container .card h4{
+    font-weight: 600;
+}
+
+.container .card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.container .card a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #3498db;
+}
+
+.titulo2{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 30px;
+    padding:30px 10px;
+
+}
+
+
+.contenedor2 {
+    width: 100%;
+    display: flex;
+    position: relative;
+    margin-top: -10px;
+    
+}
+
+.contenedor2 img {
+    border: 1px solid black;
+    width: 100%;
+
+}
+
+.contenedor2 h4 {
+    position: absolute;
+    color: #fff;
+    top: 30%;
+    left: 20%;
+    text-shadow: 2px 2px 5px black;
+    font-size: 25px;
+}
+
+.contenedor2 p {
+    position: absolute;
+    color: #fff;
+    top: 35%;
+    left: 20%;
+    text-shadow: 2px 2px 5px black;
+    font-size: 20px;
+    width: 300px;
+}
+
+.btn {
+    padding: 10px;
+    width: 250px;
+    height: 70px;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+    border-width: 3px;
+    border-color: white;
+    background-color: transparent;
+    font-size: 25px;
+
+
+}
+.contenedor2 .btn {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+}
+
+.bestsellers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -10px;
+    background-color:black ;
+    margin-bottom: -150px;
+}
+
+.bestsellers h4 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 35px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    color: #fff;
+}
+
+.bestseller img {
+    width: 250px;
+    height: 350px;
+    padding: 20px;
+}
+
+.pie-pagina {
+    width: 100%;
+    background-color: black;
+    color: aliceblue;
+    margin-top: 10%;
+
+}
+
+.pie-pagina .grupo-footer {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-footer .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-footer .box figure img {
+    width: 250px;
+}
+.pie-pagina .grupo-footer .box h2{
+    color: #F5F2CC;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-footer .box p {
+    color: #F5F2CC;
+    margin-bottom: 10px;
+}
+
+.pie-pagina > .grupo-footer > .red-social > a{
+    text-decoration: none;
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #F5F2CC;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.pie-pagina .grupo2 {
+    padding: 15px 10px;
+    text-align: center;
+    color: #F5F2CC;
+    
+}
+
+.a-redes-stlye {
+    text-decoration: none;
+    color: #F5F2CC;
+    padding: 10px;
+}
+
+.box p a {
+    text-decoration: none;
+    color: #F5F2CC;
+}
+
+.signupFrm {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 100vh;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+}
+
+.form {
+    background-color: white;
+    width: 400px;
+    border-radius: 8px;
+    padding: 20px 40px;
+    box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+    margin-left: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.inputContainer {
+    position: relative;
+    height: 45px;
+    width: 90%;
+    margin-bottom: 17px;
+}
+.input {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #DADCE0;
+    border-radius: 7px;
+    font-size: 16px;
+    padding: 0 20px;
+    outline: none;
+    background: none;
+    z-index: 1;
+}
+.label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 0 4px;
+    background-color: white;
+    color: #DADCE0;
+    font-size: 16px;
+    transition: 0.5s;
+    z-index: 0;
+}
+
+.submitBtn {
+    display: block;
+    padding: 15px 30px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 30px;
+
+}
+
+.form1 {
+    background-color: white;
+    width: 400px;
+    border-radius: 8px;
+    padding: 20px 40px;
+    box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+    margin-left: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.title__login {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    padding: 20px;
+}
+
+.ayuda__boxpadre{
+    width: 100%;
+
+}
+
+
+
+
+.title__ayuda h6 {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    text-shadow: 1px 1px 2px black;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+}
+
+
+
+.contenedor__infoayuda {
+    width: 70%;
+    margin-left: 200px;
+    border: 0px solid;
+    border-radius: 5px;
+    box-shadow:  3px 0px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-top: 10px;
+    
+}
+
+
+
+.main__ayuda {
+    background-color: rgb(231, 231, 231);
+}
+
+.signupFrm__ayuda {
+    display: flex;
+    justify-content: center;
+}
+
+.form1__ayuda {
+    background-color: white;
+    width: 400px;
+    border-radius: 8px;
+    padding: 20px 40px;
+    box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.buttons__ayuda{
+    display: grid;
+}
+
+.bodybackgroundcolor__ayuda {
+    background-color: rgb(231, 231, 231);
+
+}
+
+.card__productos {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 200px;
+    text-align: center;
+    font-family: arial;
+    margin: 20px;
+}
+
+.price {
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.card__productos button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 14px;
+}
+
+.card__productos button:hover {
+    opacity: 0.7;
+}
+
+.card__productos img {
+    max-height: 300px;
+    padding-top: 10px;
+}
+
+.card__productos h1{
+    font-size: 16px;
+    font-weight: bold;
+    
+}
+
+.productos {
+    flex-wrap: wrap;
+    object-fit: cover;
+    display: flex;
+}
+
+.contenedorfiltro {
+    padding: 20px;
+
+}
+
+.filtrosmain {
+
+    width: 20%;
+    background-color: #e2e2e2;
+    margin-top: 20px;
+    position: relative;
+}
+
+.contenedorfiltro ul li {
+    list-style: none;
+    justify-content: center;
+}
