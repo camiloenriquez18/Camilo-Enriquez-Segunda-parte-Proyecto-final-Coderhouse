@@ -5,6 +5,8 @@
 
 }
 
+/* NAVBAR */
+
 .navbar{ 
     padding: 20px;
     background-color: black;
@@ -18,8 +20,6 @@
 .navbar > .fa-bars {
     display: none;
 }
-
-
 
 .navbar > ul {
     list-style: none;
@@ -48,21 +48,18 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
-
 .navbar > ul > li > ul{
     max-height: 0;
     overflow: hidden;
     position: absolute ;
     background-color: black;
     list-style: none;
-    left: 8px;
+    left: 840px;
 }
 
 .logo{
     width: 180px;
     height: 45px;
-    margin-left: 0px;
     padding: 10px
 }
 
@@ -78,27 +75,33 @@
         padding: 20px;
     }
     .navbar > .fa-bars:hover + ul{
-        left: 0px;
+        left: 0;
     }
+
     .navbar > ul{
         justify-content: start;
         position: fixed;
+        display: flex;
         flex-direction: column;
         width: 250px;
         height: 100vh;
-        padding-top: 60px;
+        padding: 20px 0px 20px;
         align-items: center;
         left: -300px;
         transition: 0.3s;
         background-color: black;
-        top: 80px;
+        top: 50px;
         text-align: center;
         margin-top: 0px;
         margin-right: 0px;
     }
 
+    .navbar > ul > li {
+        padding: 10px 0px 10px;
+    }
+
     .navbar > ul:hover {
-        left:0px;
+        left:0;
     }
 
     .logo {
@@ -115,8 +118,10 @@
 
 }
 
+/* HEADER*/
+
 .headerindex .contenedor2 > h4{
-    position: absolute;
+    position: relative;
     color: #fff;
     top: 20%;
     left: 12%;
