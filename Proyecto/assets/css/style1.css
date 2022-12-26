@@ -67,6 +67,7 @@ html{
 }
 
 @media(max-width:576px){
+    
     .navbar_panerai{
         justify-content: space-between;
         width: 100%;
@@ -185,6 +186,12 @@ body{
     background-color: #000;
 }
 
+.cards_p {
+    justify-content: center;
+    background-color: #000;
+    display: flex;
+}
+
 .container_p .card_p{
     width: 285px;
     height: 400px;
@@ -194,14 +201,12 @@ body{
     margin:30px auto;
     color: #000;
     border-color: black ;
-    box-shadow: 0 10px 120px rgb(255 255 255 / 20%);
-    border-top-color: black;
-
+    background-color: rgb(22, 22, 22);
+    justify-content: center;
 }
-
 .container_p .card_p:hover{
     transform: translateY(-15px);
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 120px rgba(255, 255, 255, 0.2);
 }
 
 .container_p .card_p img{
@@ -262,7 +267,7 @@ body{
     .container_p .card_p h4{
         font-weight: 400;
         padding: 10px;
-        font-size: 12px;
+        font-size: 13px;
         color: #fbfae6;
         margin: 0px;
     }
@@ -382,6 +387,24 @@ body{
 
     .textofimg > p {
         font-size: 12px;
+        
+    }
+}
+@media(max-width:500px){
+    .textofimg > h4 {
+        font-weight: bold;
+        font-size: 15px;
+        border-width: 0,3px solid;
+    }
+    .textofimg > .btn {
+        width: 80px;
+        height: 30px;
+        font-size: 10px;
+
+    }
+
+    .textofimg > p {
+        font-size: 10px;
         
     }
 }
