@@ -1,7 +1,8 @@
-*{
+html{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    overflow-x: hidden;
     
 }
 
@@ -415,7 +416,16 @@ body{
     padding: 10px;
 }
 
-.grilla {
+@media(max-width:660px) {
+    .pie-pagina .grupo-footer{
+        display: block;
+    }
+    .pie-pagina .grupo-footer .box {
+        padding: 20px 50px 20px;
+    }
+}
+
+/*.grilla {
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-areas: "nav nav nav nav"
@@ -435,4 +445,4 @@ main{
 }
 footer {
     grid-area: footer;
-}
+}*/
