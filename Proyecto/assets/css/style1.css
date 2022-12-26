@@ -2,7 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-
+    
 }
 
 /* NAVBAR */
@@ -15,6 +15,8 @@
     width: 100%;
     height: 110px;
     align-items: center;
+    
+    
 }
 
 .navbar_panerai > .fa-bars {
@@ -66,6 +68,7 @@
 @media(max-width:576px){
     .navbar_panerai{
         justify-content: space-between;
+        width: 100%;
     }
     
     .navbar_panerai .fa-bars {
@@ -94,8 +97,14 @@
         text-align: center;
         margin-top: 0px;
         margin-right: 0px;
+        z-index: 1;
     }
-
+    .carousel .slides {
+        z-index: 2;
+    }
+    .carousel-control-prev-icon{
+        z-index: 2;
+    }
     .navbar_panerai > ul > li {
         padding: 10px 0px 10px;
     }
@@ -114,8 +123,9 @@
     .navbar_panerai {
         height: 70px;
         width: 100%;
+        z-index: 1;
     }
-
+    
 }
 
 /* HEADER*/
@@ -217,6 +227,15 @@ body{
     padding: 10px;
 }
 
+@media(max-width:865px) {
+    .container_p {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+}
+
 .titulo2{
     display: flex;
     justify-content: center;
@@ -277,14 +296,30 @@ body{
     margin: 0px 10%;
 }
 
+.textofimg > .btn:hover {
+    text-shadow: 0px 0px 5px #fbfae6;
+}
+
+.carousel{
+    position: relative;
+}
+
 .bestsellers {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: -10px;
     background-color:black ;
-    margin-bottom: -150px;
+    color: black;
+    position: relative;
+    
+    
+
 }
+.bestseller{    
+    display: grid;
+    padding: 10px;
+}
+
 
 .bestsellers h4 {
     display: flex;
@@ -302,11 +337,25 @@ body{
     padding: 20px;
 }
 
+.bestsellers .btn{ 
+    color: #fbfae6;
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 0px 0px 3px #fbfae6;
+}
+
+.bestsellers .btn:hover {
+    text-shadow: 0px 0px 20px #fbfae6;
+    transform: translateY(5px);
+    color: #fbfae6;
+}
+
 .pie-pagina {
     width: 100%;
     background-color: black;
     color: aliceblue;
-    margin-top: 10%;
+    margin-top: -1px;
+    padding-top: 100px;
 
 }
 
