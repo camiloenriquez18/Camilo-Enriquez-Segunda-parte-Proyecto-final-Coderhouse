@@ -301,6 +301,13 @@ body{
 
 }
 
+@media(max-width:500px){
+    .titulo2 h3{
+        font-size: 25px;
+        padding: 10px;
+    }
+}
+
 .contenedor2-foto-info{
     width: 100%;
     position: relative;
@@ -380,8 +387,6 @@ body{
 }
 
 .bestsellers {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     background-color:black ;
     color: black;
@@ -390,6 +395,12 @@ body{
     
 
 }
+.boxtobestsellers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .bestseller{    
     display: grid;
     padding: 10px;
@@ -427,17 +438,31 @@ body{
     color: #fbfae6;
 }
 
-@media(max-width:500px){
-    .titulo2 h3{
-        font-size: 25px;
+@media(max-width:1100px){
+    .bestseller img {
+        width: 145px;
+        height: 200px;
+        padding: 10px;
     }
 }
+@media(max-width:680px) {
+    .bestseller img {
+        width: 125px;
+        height: 180px;
+        padding: 10px;
+    }
+    .bestsellers h4 {
+    font-size: 30px;
+    padding: 15px;
+    }
+}
+
 .pie-pagina {
     width: 100%;
     background-color: black;
     color: aliceblue;
     margin-top: -1px;
-    padding-top: 100px;
+    padding-top: 30px;
 
 }
 
