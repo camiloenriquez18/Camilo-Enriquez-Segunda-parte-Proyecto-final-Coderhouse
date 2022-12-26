@@ -575,3 +575,104 @@ main{
 footer {
     grid-area: footer;
 }*/
+
+
+.signupFrm {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+}
+
+.form {
+    background-color: white;
+    width: 400px;
+    border-radius: 8px;
+    padding: 20px 40px;
+    box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+
+}
+
+@media(max-width:830px) {
+    .signupFrm {
+        flex-wrap: wrap;
+        margin: 1px auto;
+        min-height: 1000px;
+        padding: 20px;
+    }
+    .pie-pagina {
+        margin-top: -10px;
+    }
+}
+
+.inputContainer {
+    position: relative;
+    height: 45px;
+    width: 90%;
+    margin-bottom: 17px;
+}
+
+.inputContainer:hover{
+    box-shadow: 0 3px 5px rgba(92, 99, 105, .2);
+    border-radius: 7px;
+}
+.input {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #DADCE0;
+    border-radius: 7px;
+    font-size: 16px;
+    padding: 0 20px;
+    outline: none;
+    background: none;
+    z-index: 1;
+}
+.label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 0 4px;
+    background-color: white;
+    color: #DADCE0;
+    font-size: 16px;
+    transition: 0.5s;
+    z-index: 0;
+}
+
+.submitBtn {
+    display: block;
+    padding: 15px 30px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 30px;
+
+}
+
+.submitBtn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 1px 37px -8px rgba(0,0,0,0.64);
+}
+
+.form1 {
+    background-color: white;
+    width: 400px;
+    border-radius: 8px;
+    padding: 20px 40px;
+    box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+
+}
+.title__login {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    padding: 20px;
+    text-shadow: none;
+    font-weight: bold;
+}
