@@ -3,6 +3,7 @@ html{
     padding: 0px;
     box-sizing: border-box;
     overflow-x: hidden;
+    width: 100%;
     
 }
 
@@ -36,10 +37,10 @@ html{
     display: inline-block;
 }
 
-.navbar_panerai > ul > li:hover ul{
+/*.navbar_panerai > ul > li:hover ul{
     max-height: 300px;
     transition: 0.5s;
-}
+}*/
 
 
 .navbar_panerai ul li a{
@@ -51,14 +52,14 @@ html{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.navbar_panerai > ul > li > ul{
+/*.navbar_panerai > ul > li > ul{
     max-height: 0;
     overflow: hidden;
     position: absolute ;
     background-color: black;
     list-style: none;
     left: 840px;
-}
+}*/
 
 .logo_panerai{
     width: 180px;
@@ -66,7 +67,7 @@ html{
     padding: 10px 50px 10px 0;
 }
 
-@media(max-width:576px){
+@media(max-width:700px){
     
     .navbar_panerai{
         justify-content: space-between;
@@ -554,7 +555,7 @@ body{
     }
 }
 
-/*.grilla {
+.grilla {
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-areas: "nav nav nav nav"
@@ -574,7 +575,7 @@ main{
 }
 footer {
     grid-area: footer;
-}*/
+}
 
 /*_____________________________________________LOGIN____________________*/
 
@@ -751,3 +752,127 @@ footer {
     }
 
 }
+
+/*_________________PRODUCTOS_____________*/
+
+.card__productos {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 200px;
+    text-align: center;
+    font-family: arial;
+    margin: 20px;
+}
+
+.price {
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.card__productos button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 14px;
+}
+
+.card__productos button:hover {
+    opacity: 0.7;
+}
+
+.card__productos img {
+    max-height: 300px;
+    padding-top: 10px;
+}
+
+.card__productos h1{
+    font-size: 16px;
+    font-weight: bold;
+    
+}
+
+.productos {
+    flex-wrap: wrap;
+    object-fit: cover;
+    display: flex;
+}
+
+
+
+.contenedorfiltro ul li {
+    list-style: none;
+    
+}
+
+.filtrosmain{
+    background-color: #6a6a6a;
+    width: 220px;
+    height: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0px;
+}
+
+
+/*______________Producto UNICO________________*/
+
+.card_next_Uproducto {
+    width: 285px;
+    height: 250px;
+    border-radius: 8px;
+    text-align: center;
+    justify-content: center;
+    border-color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card_next_Uproducto > .submitBtn {
+    margin: 0px;
+    
+}
+
+.card_next_Uproducto > .submitBtn:hover{
+    transform: translateY(5px);
+}
+
+.card_next_Uproducto a {
+    text-decoration: none;
+    color: rgb(34, 34, 34);
+}
+
+.backgoundcolor_body_productounico {
+    background-color: #fffef7;
+}
+
+.card_next_Uproducto h6{
+    color: rgb(34, 34, 34);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+
+.card_next_Uproducto > p {
+    font-weight: bold;
+    color: rgb(34, 34, 34);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+.card_next_Uproducto > h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.share_product > h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
