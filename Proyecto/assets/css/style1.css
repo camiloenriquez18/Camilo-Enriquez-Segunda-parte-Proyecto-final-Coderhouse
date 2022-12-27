@@ -4,6 +4,7 @@ html{
     box-sizing: border-box;
     overflow-x: hidden;
     width: 100%;
+    min-height: 100vh;
     
 }
 
@@ -487,7 +488,7 @@ body{
     color: aliceblue;
     margin-top: -1px;
     padding-top: 30px;
-
+    bottom:0;
 }
 
 .pie-pagina .grupo-footer {
@@ -555,7 +556,7 @@ body{
     }
 }
 
-.grilla {
+/*.grilla {
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-areas: "nav nav nav nav"
@@ -575,7 +576,7 @@ main{
 }
 footer {
     grid-area: footer;
-}
+}*/
 
 /*_____________________________________________LOGIN____________________*/
 
@@ -823,7 +824,7 @@ footer {
 
 .card_next_Uproducto {
     width: 285px;
-    height: 250px;
+    height: 350px;
     border-radius: 8px;
     text-align: center;
     justify-content: center;
@@ -831,6 +832,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-top: 100px;
 }
 
 .card_next_Uproducto > .submitBtn {
@@ -876,3 +878,52 @@ footer {
     font-size: 15px;
 }
 
+.article h4 {
+    font-size: 20px;
+}
+.article p {
+    font-size: 15px;
+}
+
+.accordion-body{
+    background-color:#fffef7;
+}
+
+.titulo_sugerencias h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.fa-cart-shopping {
+    font-size: 13px;
+}
+
+.img_producto_unico{
+    display: flex;
+    justify-content: center;
+}
+@media(max-width:600px){
+    .img_producto_unico{
+        height: 300px;
+        width: 200px;
+    }
+}
+.img_style_sugerencias{
+    height: 350px;
+    width: 220px;
+}
+.img_style_sugerencias:hover{
+    transform: translateY(-10px);
+}
+
+.titulo_sugerencias {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.img_prod_sugerencias {
+    display: flex;
+    justify-content: center;
+}
