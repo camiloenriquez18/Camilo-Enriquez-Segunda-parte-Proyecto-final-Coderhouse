@@ -576,6 +576,7 @@ footer {
     grid-area: footer;
 }*/
 
+/*_____________________________________________LOGIN____________________*/
 
 .signupFrm {
     display: flex;
@@ -676,4 +677,77 @@ footer {
     padding: 20px;
     text-shadow: none;
     font-weight: bold;
+}
+
+/*________________________________AYUDA_____________*/
+
+.signupFrm__ayuda {
+    display: flex;
+    justify-content: center;
+}
+
+.form1__ayuda {
+    background-color: white;
+    width: 400px;
+    border-radius: 8px;
+    padding: 20px 40px;
+    box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.buttons__ayuda{
+    display: grid;
+}
+
+.bodybackgroundcolor__ayuda {
+    background-color: rgb(231, 231, 231);
+
+}
+
+.contenedorayuda {
+    display: flex;
+    flex-direction: column;
+}
+
+.accordion{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.title__ayuda h6 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    padding: 20px;
+    text-shadow: none;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+@media(max-width:576px){
+    .title__ayuda h6 {
+    font-size: 18px;
+    margin: 1px auto;
+    }
+
+    .accordion{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .form1__ayuda {
+        background-color: white;
+        width: 350px;
+        border-radius: 8px;
+        padding: 20px 40px;
+        box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .title__login {
+        font-size: 25px;
+    }
+
 }
