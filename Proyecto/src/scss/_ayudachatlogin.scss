@@ -1,0 +1,64 @@
+.masayuda{
+    .signupFrm__ayuda {
+        display: flex;
+        justify-content: center;
+        .form1__ayuda {
+            background-color: white;
+            width: 400px;
+            border-radius: 8px;
+            padding: 20px 40px;
+            box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+            margin-top: 50px;
+            margin-bottom: 50px;
+            .buttons__ayuda{
+                display: grid;
+                .submitBtn {
+                    @extend %button_black;
+                }
+            }
+            .title__login {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 30px;
+                padding: 20px;
+                text-shadow: none;
+                font-weight: bold;
+            }
+            .inputContainer {
+                position: relative;
+                height: 45px;
+                width: 90%;
+                margin-bottom: 17px;
+                &:hover {
+                    box-shadow: 0 3px 5px rgba(92, 99, 105, .2);
+                    border-radius: 7px;
+                }
+                .input {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    height: 100%;
+                    width: 100%;
+                    border: 1px solid #DADCE0;
+                    border-radius: 7px;
+                    font-size: 16px;
+                    padding: 0 20px;
+                    outline: none;
+                    background: none;
+                    z-index: 1;
+                }
+                .label {
+                    position: absolute;
+                    top: 15px;
+                    left: 15px;
+                    padding: 0 4px;
+                    background-color: white;
+                    color: #DADCE0;
+                    font-size: 16px;
+                    transition: 0.5s;
+                    z-index: 0;
+                }
+            }
+            
+        }
+    }
+}

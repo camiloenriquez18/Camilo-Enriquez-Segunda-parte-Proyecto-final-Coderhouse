@@ -1,0 +1,66 @@
+.bestsellers {
+    justify-content: center;
+    background-color:black ;
+    color: black;
+    position: relative;
+    > h4 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        text-transform: uppercase;
+        padding-top: 50px;
+        padding-bottom: 40px;
+        color: #fbfae6;
+        font-weight: bold;
+        font-size: 40px;
+    }
+    > .boxtobestsellers {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .bestseller{    
+            display: grid;
+            padding: 10px;
+            
+            > img {
+                width: 250px;
+                height: 350px;
+                padding: 20px;
+            }
+            > .btn{ 
+                color: #fbfae6;
+                font-size: 22px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                text-shadow: 0px 0px 3px #fbfae6;
+            }
+            > .btn:hover {
+                text-shadow: 0px 0px 20px #fbfae6;
+                transform: translateY(5px);
+                color: #fbfae6;
+            }
+            
+        }
+    }
+    
+    
+}
+
+@media(max-width:1100px){
+    .bestseller img {
+        width: 145px;
+        height: 200px;
+        padding: 10px;
+    }
+}
+
+@media(max-width:680px) {
+    .bestseller img {
+        width: 125px;
+        height: 180px;
+        padding: 10px;
+    }
+    .bestsellers h4 {
+    font-size: 30px;
+    padding: 15px;
+    }
+}

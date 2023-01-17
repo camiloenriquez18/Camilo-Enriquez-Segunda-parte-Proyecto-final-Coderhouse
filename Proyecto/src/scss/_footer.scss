@@ -1,0 +1,75 @@
+.pie-pagina{
+    width: 100%;
+    background-color: black;
+    color: aliceblue;
+    margin-top: -1px;
+    padding-top: 30px;
+    bottom:0;
+    >.grupo-footer {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+        > .red-social > a{
+            text-decoration: none;
+            width: 45px;
+            height: 45px;
+            line-height: 45px;
+            color: #F5F2CC;
+            margin-right: 10px;
+            text-align: center;
+        } 
+        .box{
+            h2{
+                color: #F5F2CC;
+                margin-bottom: 25px;
+                font-size: 20px;
+            }
+            p {
+                color: #F5F2CC;
+                margin-bottom: 10px;
+            }
+            
+        figure {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 250px;
+            }
+            p {
+                color: #F5F2CC;
+                margin-bottom: 10px;
+            }
+            
+        }
+    }
+    }
+}
+
+.pie-pagina .grupo2 {
+    padding: 15px 10px;
+    text-align: center;
+    color: #F5F2CC;
+    
+}
+
+.a-redes-stlye {
+    text-decoration: none;
+    color: #F5F2CC;
+    padding: 10px;
+}
+
+@media(max-width:660px) {
+    .pie-pagina .grupo-footer{
+        display: block;
+    }
+    .pie-pagina .grupo-footer .box {
+        padding: 20px 50px 20px;
+    }
+}

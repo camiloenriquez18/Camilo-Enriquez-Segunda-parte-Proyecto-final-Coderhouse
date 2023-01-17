@@ -1,0 +1,93 @@
+.contenedor2-foto-info{
+    width: 100%;
+    position: relative;
+    text-align: center;
+    margin-top: -2px;
+    
+    
+}
+.contenedor2-foto-info > .textofimg {
+    position: absolute;
+    color: #fbfae6;
+    top: 35%;
+    left: 10%;
+    text-align: start;
+}
+
+
+.contenedor2-foto-info > img {
+    width: 100%;
+    background-size: cover;
+
+}
+
+.textofimg {
+        height: 200px;
+        width: 400px;
+        position: absolute;
+}
+
+.textofimg > h4 {
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.textofimg > p {
+    font-size: 20px;
+    
+}
+
+.textofimg > .btn {
+    padding: 3px;
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+    border-width: 3px;
+    border-color: white;
+    background-color: transparent;
+    font-size: 20px;
+    margin: 0px 10%;
+}
+
+.textofimg > .btn:hover {
+    text-shadow: 0px 0px 5px #fbfae6;
+}
+
+@media(max-width:745px){
+    .textofimg > h4 {
+        font-weight: bold;
+        font-size: 25px;
+        border-width: 1px solid;
+    }
+    .textofimg > .btn {
+        padding: 3px;
+        width: 110px;
+        height: 35px;
+        font-size: 13px;
+    }
+
+    .textofimg > p {
+        font-size: 12px;
+        
+    }
+}
+@media(max-width:500px){
+    .textofimg > h4 {
+        font-weight: bold;
+        font-size: 15px;
+        border-width: 0,3px solid;
+    }
+    .textofimg > .btn {
+        width: 80px;
+        height: 30px;
+        font-size: 10px;
+
+    }
+
+    .textofimg > p {
+        font-size: 10px;
+        
+    }
+}

@@ -282,9 +282,6 @@ body{
         font-size: 12px;
     }
 }
-
-
-
 }
 
 .titulo2{
@@ -525,7 +522,6 @@ body{
 
 .pie-pagina > .grupo-footer > .red-social > a{
     text-decoration: none;
-    display: inline-block;
     width: 45px;
     height: 45px;
     line-height: 45px;
