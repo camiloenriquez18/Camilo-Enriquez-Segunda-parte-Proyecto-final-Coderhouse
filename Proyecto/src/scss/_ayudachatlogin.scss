@@ -13,7 +13,7 @@
             .buttons__ayuda{
                 display: grid;
                 .submitBtn {
-                    @extend %button_black;
+                    @include boton(#111);
                 }
             }
             .title__login {

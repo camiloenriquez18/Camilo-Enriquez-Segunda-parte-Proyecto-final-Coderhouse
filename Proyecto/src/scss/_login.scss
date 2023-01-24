@@ -64,23 +64,9 @@
     z-index: 0;
 }
 
-%button_black{
-        display: block;
-    padding: 15px 30px;
-    border: none;
-    background-color: black;
-    color: white;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 30px;
-    &:hover {
-        transform: translateY(-5px);
-        box-shadow: 0px 1px 37px -8px rgba(0,0,0,0.64);
-    }
-}
 .submitBtn {
-    @extend %button_black;
+    @include boton(#111);
+    margin: 0px;
 }
 
 .form1 {

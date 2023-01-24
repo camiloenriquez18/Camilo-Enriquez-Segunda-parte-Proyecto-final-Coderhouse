@@ -10,11 +10,8 @@
     justify-content: space-between;
     margin-top: 60px;
     .submitBtn {
+        @include boton (#111);
         margin: 0px;
-        &:hover{
-            transform: translateY(5px);
-        }
-        
     }
     a {
         text-decoration: none;

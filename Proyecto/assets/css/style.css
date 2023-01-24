@@ -131,17 +131,17 @@ body {
   width: 45px;
   height: 45px;
   line-height: 45px;
-  color: #F5F2CC;
+  color: #fbfae6;
   margin-right: 10px;
   text-align: center;
 }
 .pie-pagina > .grupo-footer .box h2 {
-  color: #F5F2CC;
+  color: #fbfae6;
   margin-bottom: 25px;
   font-size: 20px;
 }
 .pie-pagina > .grupo-footer .box p {
-  color: #F5F2CC;
+  color: #fbfae6;
   margin-bottom: 10px;
 }
 .pie-pagina > .grupo-footer .box figure {
@@ -155,19 +155,19 @@ body {
   width: 250px;
 }
 .pie-pagina > .grupo-footer .box figure p {
-  color: #F5F2CC;
+  color: #fbfae6;
   margin-bottom: 10px;
 }
 
 .pie-pagina .grupo2 {
   padding: 15px 10px;
   text-align: center;
-  color: #F5F2CC;
+  color: #fbfae6;
 }
 
 .a-redes-stlye {
   text-decoration: none;
-  color: #F5F2CC;
+  color: #fbfae6;
   padding: 10px;
 }
 
@@ -530,19 +530,20 @@ h5 {
   z-index: 0;
 }
 
-.masayuda .signupFrm__ayuda .form1__ayuda .buttons__ayuda .submitBtn, .submitBtn {
+.submitBtn {
+  background-color: #111;
   display: block;
   padding: 15px 30px;
   border: none;
-  background-color: black;
   color: white;
   border-radius: 6px;
   cursor: pointer;
   font-size: 16px;
   margin-top: 30px;
+  margin: 0px;
 }
-.masayuda .signupFrm__ayuda .form1__ayuda .buttons__ayuda .submitBtn:hover, .submitBtn:hover {
-  transform: translateY(-5px);
+.submitBtn:hover {
+  transform: translateY(5px);
   box-shadow: 0px 1px 37px -8px rgba(0, 0, 0, 0.64);
 }
 
@@ -601,6 +602,21 @@ h5 {
 .masayuda .signupFrm__ayuda .form1__ayuda .buttons__ayuda {
   display: grid;
 }
+.masayuda .signupFrm__ayuda .form1__ayuda .buttons__ayuda .submitBtn {
+  background-color: #111;
+  display: block;
+  padding: 15px 30px;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 30px;
+}
+.masayuda .signupFrm__ayuda .form1__ayuda .buttons__ayuda .submitBtn:hover {
+  transform: translateY(5px);
+  box-shadow: 0px 1px 37px -8px rgba(0, 0, 0, 0.64);
+}
 .masayuda .signupFrm__ayuda .form1__ayuda .title__login {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 30px;
@@ -657,10 +673,20 @@ h5 {
   margin-top: 60px;
 }
 .card_next_Uproducto .submitBtn {
+  background-color: #111;
+  display: block;
+  padding: 15px 30px;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 30px;
   margin: 0px;
 }
 .card_next_Uproducto .submitBtn:hover {
   transform: translateY(5px);
+  box-shadow: 0px 1px 37px -8px rgba(0, 0, 0, 0.64);
 }
 .card_next_Uproducto a {
   text-decoration: none;

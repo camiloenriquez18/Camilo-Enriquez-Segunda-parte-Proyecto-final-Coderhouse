@@ -18,18 +18,18 @@
             width: 45px;
             height: 45px;
             line-height: 45px;
-            color: #F5F2CC;
+            color: $colordeletra;
             margin-right: 10px;
             text-align: center;
         } 
         .box{
             h2{
-                color: #F5F2CC;
+                color: $colordeletra;
                 margin-bottom: 25px;
                 font-size: 20px;
             }
             p {
-                color: #F5F2CC;
+                color: $colordeletra;
                 margin-bottom: 10px;
             }
             
@@ -43,7 +43,7 @@
                 width: 250px;
             }
             p {
-                color: #F5F2CC;
+                color: $colordeletra;
                 margin-bottom: 10px;
             }
             
@@ -55,13 +55,13 @@
 .pie-pagina .grupo2 {
     padding: 15px 10px;
     text-align: center;
-    color: #F5F2CC;
+    color: $colordeletra;
     
 }
 
 .a-redes-stlye {
     text-decoration: none;
-    color: #F5F2CC;
+    color: $colordeletra;
     padding: 10px;
 }
 
