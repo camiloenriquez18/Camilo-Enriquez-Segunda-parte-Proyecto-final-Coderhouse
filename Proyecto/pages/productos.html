@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="../assets/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <title>Inicio</title>
-    <!--<style>
-    </style>-->
 </head>
 <body class="grilla">
     <nav class="navbar_panerai">
@@ -17,7 +15,6 @@
         <ul>
             <li><a href="../index.html">Inicio</a></li>
             <li><a href="./productos.html">Productos</a></li>
-            <li><a href="./ofertas.html">Ofertas</a></li>
             <li><a href="./nosotros.html">Nosotros</a></li>
             <li><a href="./ayuda.html">Ayuda</a></li>
             <li><a href="./login.html">Login / Sign in</a></li>
@@ -25,116 +22,167 @@
         <img  class="logo_panerai" src="../img/descarga.png" alt="">
     </nav>
 <main>
-    <section class="filtrosmain">
-        <div class="contenedorfiltro">
-            <h3>Colección</h3>
-            <ul>
-                <li>
-                    <p><input type="checkbox"> LUMINOR</p>   
-                    <p><input type="checkbox"> SUBMERSIBLE</p>
-                    <p><input type="checkbox"> LUMINOR DUE</p>
-                </li>
-            </ul>
+
+    <div class="container-post">
+
+        <input type="radio" id="TODOS" name="categories" value="TODOS" checked>
+        <input type="radio" id="automaticos" name="categories" value="automaticos">
+        <input type="radio" id="movimientodecuarzo" name="categories" value="movimientodecuarzo">
+        <input type="radio" id="malladeacero" name="categories" value="malladeacero">
+        <input type="radio" id="correadecuero" name="categories" value="correadecuero">
+
+        <div class="container-category">
+            <label for="TODOS">TODOS</label>
+            <label for="automaticos">AUTOMATICOS</label>
+            <label for="movimientodecuarzo">MOVIMIENTO DE CUARZO</label>
+            <label for="malladeacero">MALLA DE ACERO</label>
+            <label for="correadecuero">MALLA DE CUERO</label>
         </div>
-        <div class="contenedorfiltro">
-            <h3>Material de la correa</h3>
-            <ul>
-                <li>
-                    <p><input type="checkbox"> Acero</p>   
-                    <p><input type="checkbox"> Resina</p>
-                    <p><input type="checkbox"> Cuero</p>
-                </li>
-            </ul>
-        </div>
-            <div class="contenedorfiltro">
-                <div>
-                <h3>Precio</h3>
+
+        <div class="posts">
+
+            <div class="post" data-category="automaticos">
+                <div class="card__productos">
+                    <img src="../img/Producto__watch09.png" alt="watch" >
+                    <div class="info__card">
+                    <h1>Luminor Sumersible</h1>
+                    <p class="price">$7199</p>
+                    <button class="buttonvermas_cardproducto"><a href="./producto-unico.html">Ver Más</a></button>
+                    </div>
                 </div>
-                <ul>
-                    <li>
-                        <p><input type="checkbox"> 0 a 5000</p>   
-                        <p><input type="checkbox"> 5000 a 15000</p>
-                        <p><input type="checkbox"> Más de 15000</p>
-                    </li>
-                </ul>
+                <div class="card__productos">
+                    <img src="../img/Producto__watch12.png" alt="watch" >
+                    <div class="info__card">
+                        <h1>Luminor Sumersible</h1>
+                        <p class="price">$7199</p>
+                        <button class="buttonvermas_cardproducto"><a href="./producto-unico.html">Ver Más</a></button>
+                        </div>
+                </div>
+                <div class="card__productos">
+                    <img src="../img/Producto__watch1 (1).png" alt="watch">
+                    <div class="info__card">
+                        <h1>Luminor Sumersible</h1>
+                        <p class="price">$7199</p>
+                        <button class="buttonvermas_cardproducto"><a href="./producto-unico.html">Ver Más</a></button>
+                    </div>
+                </div>
+                <div class="card__productos">
+                    <img src="../img/Producto__watch2.png" alt="watch" >
+                    <div class="info__card">
+                        <h1>Luminor Sumersible</h1>
+                        <p class="price">$7199</p>
+                        <button class="buttonvermas_cardproducto"><a href="./producto-unico.html">Ver Más</a></button>
+                    </div>
+                </div>
             </div>
-    </section>
-    <section>
-    <div class="productos">
-    <div class="card__productos">
-        <img src="./img/Producto__watch01.png" alt="watch" style="width:100%">
-        <h1>Luminor Sumersible</h1>
-        <p class="price">$7199</p>
-        <p><button>Ver Más</button></p>
+
+            <div class="post" data-category="movimientodecuarzo">
+                <div class="card__productos">
+                    <img src="../img/Producto__watch8.png" alt="watch">
+                    <div class="info__card">
+                        <h1>Luminor Sumersible</h1>
+                        <p class="price">$7199</p>
+                        <button class="buttonvermas_cardproducto"><a href="./producto-unico.html">Ver Más</a></button>
+                    </div>
+                </div>
+                <div class="card__productos">
+                    <img src="../img/Producto__watch11.png" alt="watch">
+                    <div class="info__card">
+                        <h1>Luminor Sumersible</h1>
+                        <p class="price">$7199</p>
+                        <button class="buttonvermas_cardproducto"><a href="./producto-unico.html">Ver Más</a></button>
+                    </div>
+                </div>
+                <div class="card__productos">
+                    <img src="../img/Producto__watch05.png" alt="watch">
+                    <div class="info__card">
+                        <h1>Luminor Sumersible</h1>
+                        <p class="price">$7199</p>
+                        <button class="buttonvermas_cardproducto"><a href="./producto-unico.html">Ver Más</a></button>
+                    </div>
+                </div>
+                <div class="card__productos">
+                    <img src="../img/Producto__watch06.png" alt="watch">
+                    <div class="info__card">
+                        <h1>Luminor Sumersible</h1>
+                        <p class="price">$7199</p>
+                        <button class="buttonvermas_cardproducto"><a href="./producto-unico.html">Ver Más</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post" data-category="malladeacero">
+                <div class="card__productos">
+                    <img src="../img/Producto__watch04.png" alt="watch">
+                    <div class="info__card">
+                        <h1>Luminor Sumersible</h1>
+                        <p class="price">$7199</p>
+                        <button class="buttonvermas_cardproducto"><a href="./producto-unico.html">Ver Más</a></button>
+                    </div>
+                </div>
+                <div class="card__productos">
+                    <img src="../img/Producto__watch3.png" alt="watch" >
+                    <div class="info__card">
+                        <h1>Luminor Sumersible</h1>
+                        <p class="price">$7199</p>
+                        <button class="buttonvermas_cardproducto"><a href="./producto-unico.html">Ver Más</a></button>
+                    </div>
+                </div>
+                <div class="card__productos">
+                    <img src="../img/1,2,3,44.png" alt="watch" >
+                    <div class="info__card">
+                        <h1>Luminor Sumersible</h1>
+                        <p class="price">$7199</p>
+                        <button class="buttonvermas_cardproducto"><a href="./producto-unico.html">Ver Más</a></button>
+                    </div>
+                </div>
+                <div class="card__productos">
+                    <img src="../img/Producto__watch6.png" alt="watch" >
+                    <div class="info__card">
+                        <h1>Luminor Sumersible</h1>
+                        <p class="price">$7199</p>
+                        <button class="buttonvermas_cardproducto"><a href="./producto-unico.html">Ver Más</a></button>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="post" data-category="correadecuero">
+                <div class="card__productos">
+                    <img src="../img/Producto__watch3 (1).png" alt="watch" >
+                    <div class="info__card">
+                        <h1>Luminor Sumersible</h1>
+                        <p class="price">$7199</p>
+                        <button class="buttonvermas_cardproducto"><a href="./producto-unico.html">Ver Más</a></button>
+                    </div>
+                </div>
+                <div class="card__productos">
+                    <img src="../img/Producto__watch4.png" alt="watch" >
+                    <div class="info__card">
+                        <h1>Luminor Sumersible</h1>
+                        <p class="price">$7199</p>
+                        <button class="buttonvermas_cardproducto"><a href="./producto-unico.html">Ver Más</a></button>
+                    </div>
+                </div>
+                <div class="card__productos">
+                    <img src="../img/Producto__watch4 (1).png" alt="watch" >
+                    <div class="info__card">
+                        <h1>Luminor Sumersible</h1>
+                        <p class="price">$7199</p>
+                        <button class="buttonvermas_cardproducto"><a href="./producto-unico.html">Ver Más</a></button>
+                    </div>
+                </div>
+                <div class="card__productos">
+                    <img src="../img/Producto__watch5 (1).png" alt="watch" >
+                    <div class="info__card">
+                        <h1>Luminor Sumersible</h1>
+                        <p class="price">$7199</p>
+                        <button class="buttonvermas_cardproducto"><a href="./producto-unico.html">Ver Más</a></button>
+                    </div>
+                </div>
+            </div>
     </div>
-    <div class="card__productos">
-        <img src="./img/Producto__watch02.png" alt="watch" style="width:100%">
-        <h1>Luminor Sumersible</h1>
-        <p class="price">$7199</p>
-        <p><button>Ver Más</button></p>
-    </div>
-    <div class="card__productos">
-        <img src="./img/Producto__watch03.png" alt="watch" style="width:100%">
-        <h1>Luminor Sumersible</h1>
-        <p class="price">$7199</p>
-        <p><button>Ver Más</button></p>
-    </div>
-    <div class="card__productos">
-        <img src="./img/Producto__watch04.png" alt="watch" style="width:100%">
-        <h1>Luminor Sumersible</h1>
-        <p class="price">$7199</p>
-        <p><button>Ver Más</button></p>
-    </div>
-    <div class="card__productos">
-        <img src="./img/Producto__watch05.png" alt="watch" style="width:100%">
-        <h1>Luminor Sumersible</h1>
-        <p class="price">$7199</p>
-        <p><button>Ver Más</button></p>
-    </div>
-    <div class="card__productos">
-        <img src="./img/Producto__watch06.png" alt="watch" style="width:100%">
-        <h1>Luminor Sumersible</h1>
-        <p class="price">$7199</p>
-        <p><button>Ver Más</button></p>
-    </div>
-    <div class="card__productos">
-        <img src="./img/Producto__watch07.png" alt="watch" style="width:100%">
-        <h1>Luminor Sumersible</h1>
-        <p class="price">$7199</p>
-        <p><button>Ver Más</button></p>
-    </div>
-    <div class="card__productos">
-        <img src="./img/Producto__watch08.png" alt="watch" style="width:100%">
-        <h1>Luminor Sumersible</h1>
-        <p class="price">$7199</p>
-        <p><button>Ver Más</button></p>
-    </div>
-    <div class="card__productos">
-        <img src="./img/Producto__watch09.png" alt="watch" style="width:100%">
-        <h1>Luminor Sumersible</h1>
-        <p class="price">$7199</p>
-        <p><button>Ver Más</button></p>
-    </div>
-    <div class="card__productos">
-        <img src="./img/Producto__watch10.png" alt="watch" style="width:100%">
-        <h1>Luminor Sumersible</h1>
-        <p class="price">$7199</p>
-        <p><button>Ver Más</button></p>
-    </div>
-    <div class="card__productos">
-        <img src="./img/Producto__watch12.png" alt="watch" style="width:100%">
-        <h1>Luminor Sumersible</h1>
-        <p class="price">$7199</p>
-        <p><button>Ver Más</button></p>
-    </div>
-    <div class="card__productos">
-        <img src="./img/Producto__watch11.png" alt="watch" style="width:100%">
-        <h1>Luminor Sumersible</h1>
-        <p class="price">$7199</p>
-        <p><button>Ver Más</button></p>
-    </div>
-    </div>
-    </section>
+
 </main>
 
 <footer class="pie-pagina">
@@ -166,7 +214,7 @@
         <small>&copy; 2022 <p>Camilo Enriquez</p> - Todos los derechos reservados.</small>
     </div>
 </footer>
-</div>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>

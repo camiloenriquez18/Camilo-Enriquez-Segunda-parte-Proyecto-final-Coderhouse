@@ -1,0 +1,22 @@
+/*sistema de filtrado*/
+
+[value="TODOS"]:checked ~ .posts .post[data-category]{
+    display: block;
+}
+
+
+[value="automaticos"]:checked ~ .posts .post:not([data-category~="automaticos"]),
+[value="movimientodecuarzo"]:checked ~ .posts .post:not([data-category~="movimientodecuarzo"]),
+[value="malladeacero"]:checked ~ .posts .post:not([data-category~="malladeacero"]),
+[value="correadecuero"]:checked ~ .posts .post:not([data-category~="correadecuero"]) {
+    display: none;
+}
+
+[value="TODOS"]:checked ~ .container-category [for="TODOS"],
+[value="automaticos"]:checked ~ .container-category [for="automaticos"],
+[value="movimientodecuarzo"]:checked ~ .container-category [for="movimientodecuarzo"],
+[value="malladeacero"]:checked ~ .container-category [for="malladeacero"],
+[value="correadecuero"]:checked ~ .container-category [for="correadecuero"]{
+    background: #5f5f5e;
+    color: #fff;
+}

@@ -1,14 +1,9 @@
 .card_next_Uproducto {
-    width: 285px;
-    height: 350px;
-    border-radius: 8px;
+    height: 400px;
     text-align: center;
-    justify-content: center;
-    border-color: gray;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin-top: 60px;
+    justify-content: flex-end;
     .submitBtn {
         @include boton (#111);
         margin: 0px;
@@ -73,7 +68,13 @@
 .img_producto_unico{
     display: flex;
     justify-content: center;
+    a {
+        img{
+            margin-top: 20px;
+        }
+    }
 }
+
 @media(max-width:600px){
     .img_producto_unico{
         height: 300px;
@@ -82,8 +83,8 @@
     }
 }
 .img_style_sugerencias{
-    height: 350px;
-    width: 220px;
+    height: 320px;
+    width: 200px;
 }
 .img_style_sugerencias:hover{
     transform: translateY(-10px);
