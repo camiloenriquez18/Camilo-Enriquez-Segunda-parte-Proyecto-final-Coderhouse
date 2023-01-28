@@ -576,6 +576,8 @@ h5 {
   font-weight: bold;
   display: flex;
   justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .accordion {
@@ -586,6 +588,15 @@ h5 {
   background-color: #faf9f4;
 }
 
+@media (max-width: 700px) {
+  .accordion {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .contenedorayuda .title__ayuda h6 {
+    justify-content: center;
+  }
+}
 .masayuda .signupFrm__ayuda {
   display: flex;
   justify-content: center;
@@ -771,37 +782,31 @@ h5 {
 }
 
 .posts {
-  gap: 10px;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 20px;
-  margin-bottom: 50px;
   justify-content: center;
+  margin-bottom: 30px;
 }
-.posts .post {
-  margin-bottom: 100px;
-  justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
-}
-.posts .post .card__productos {
+.posts .card__productos {
   width: 250px;
   height: 500px;
   padding: 20px;
   border: 0;
+  margin: 0px;
   text-align: center;
 }
-.posts .post .card__productos h1 {
+.posts .card__productos h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 15px;
   display: flex;
   justify-content: center;
 }
-.posts .post .card__productos .price > p {
+.posts .card__productos .price > p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 13px;
 }
-.posts .post .card__productos .buttonvermas_cardproducto {
+.posts .card__productos .buttonvermas_cardproducto {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 600;
   padding: 10px 20px 10px;
@@ -810,25 +815,62 @@ h5 {
   opacity: 0.7;
   background-color: white;
 }
-.posts .post .card__productos .buttonvermas_cardproducto:hover {
+.posts .card__productos .buttonvermas_cardproducto:hover {
   opacity: 1;
 }
-.posts .post .card__productos .buttonvermas_cardproducto a {
+.posts .card__productos .buttonvermas_cardproducto a {
   text-decoration: none;
   color: black;
 }
-.posts .post .card__productos img {
+.posts .card__productos img {
   width: 100%;
   height: 150;
   padding: 10px;
 }
-.posts .post .card__productos img:hover {
+.posts .card__productos img:hover {
   background: rgb(244, 243, 243);
   background: linear-gradient(180deg, rgb(244, 243, 243) 0%, rgba(237, 237, 237, 0.5550595238) 9%, rgb(226, 225, 225) 100%);
 }
 
 input[type=radio] {
   display: none;
+}
+
+@media (max-width: 535px) {
+  .posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0;
+    margin-bottom: 20px;
+  }
+  .posts .card__productos {
+    display: flex;
+    background-color: #f7f7f7;
+    height: 220px;
+    width: 270px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    gap: 15px;
+    margin-right: 0px;
+  }
+  .posts .card__productos img {
+    width: 130px;
+    height: 190px;
+  }
+  .posts .card__productos .info__card {
+    display: block;
+    margin-top: 20px;
+  }
+  .posts .card__productos .buttonvermas_cardproducto {
+    font-size: 13px;
+    padding: 5px 10px 5px;
+  }
+}
+.container-post {
+  max-width: 1200px;
+  margin: auto;
 }
 
 .container-category {
@@ -853,42 +895,15 @@ input[type=radio] {
   opacity: 0.8;
 }
 
-@media (max-width: 500px) {
-  .posts .post {
-    margin-bottom: 0px;
-  }
-  .posts .post .card__productos {
-    display: flex;
-    background-color: #f7f7f7;
-    height: 220px;
-    width: 270px;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    padding: 20px;
-    gap: 15px;
-  }
-  .posts .post .card__productos img {
-    width: 130px;
-    height: 180px;
-  }
-  .posts .post .card__productos .info__card {
-    display: block;
-    margin-top: 20px;
-  }
-  .posts .post .card__productos .buttonvermas_cardproducto {
-    font-size: 13px;
-    padding: 5px 10px 5px;
-  }
-}
 /*sistema de filtrado*/
 [value=TODOS]:checked ~ .posts .post[data-category] {
   display: block;
 }
 
-[value=automaticos]:checked ~ .posts .post:not([data-category~=automaticos]),
-[value=movimientodecuarzo]:checked ~ .posts .post:not([data-category~=movimientodecuarzo]),
-[value=malladeacero]:checked ~ .posts .post:not([data-category~=malladeacero]),
-[value=correadecuero]:checked ~ .posts .post:not([data-category~=correadecuero]) {
+[value=automaticos]:checked ~ .posts .card__productos:not([data-category~=automaticos]),
+[value=movimientodecuarzo]:checked ~ .posts .card__productos:not([data-category~=movimientodecuarzo]),
+[value=malladeacero]:checked ~ .posts .card__productos:not([data-category~=malladeacero]),
+[value=correadecuero]:checked ~ .posts .card__productos:not([data-category~=correadecuero]) {
   display: none;
 }
 
@@ -899,4 +914,54 @@ input[type=radio] {
 [value=correadecuero]:checked ~ .container-category [for=correadecuero] {
   background: #5f5f5e;
   color: #fff;
+}
+
+[value=sucursal1]:checked ~ .posts__sucursales .post__sucursales[data-category] {
+  display: block;
+}
+
+[value=sucursal1]:checked ~ .posts__sucursales .post__sucursales:not([data-category~=sucursal1]),
+[value=sucursal2]:checked ~ .posts__sucursales .post__sucursales:not([data-category~=sucursal2]),
+[value=sucursal3]:checked ~ .posts__sucursales .post__sucursales:not([data-category~=sucursal3]),
+[value=sucursal4]:checked ~ .posts__sucursales .post__sucursales:not([data-category~=sucursal4]) {
+  display: none;
+}
+
+[value=sucursal1]:checked ~ .container-category [for=sucursal1],
+[value=sucursal2]:checked ~ .container-category [for=sucursal2],
+[value=sucursal3]:checked ~ .container-category [for=sucursal3],
+[value=sucursal4]:checked ~ .container-category [for=sucursal] {
+  background: #5f5f5e;
+  color: #fff;
+}
+
+.container-category .label__sucursales {
+  background-color: #5f5f5e;
+  margin-bottom: 30px;
+}
+.container-category .label__sucursales:hover {
+  opacity: 0.5;
+}
+.container-category .label__sucursales:hover:active {
+  background-color: rgb(2, 2, 2);
+}
+
+.card__sucursales {
+  width: auto;
+  height: 700px;
+  text-align: center;
+  margin-top: 40px;
+}
+.card__sucursales img {
+  width: 500px;
+  height: 600px;
+}
+
+.posts__sucursales {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.posts__sucursales iframe {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */

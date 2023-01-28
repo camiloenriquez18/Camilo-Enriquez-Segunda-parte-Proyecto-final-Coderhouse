@@ -1,0 +1,53 @@
+[value="sucursal1"]:checked ~ .posts__sucursales .post__sucursales[data-category]{
+    display: block;
+}
+
+
+[value="sucursal1"]:checked ~ .posts__sucursales .post__sucursales:not([data-category~="sucursal1"]),
+[value="sucursal2"]:checked ~ .posts__sucursales .post__sucursales:not([data-category~="sucursal2"]),
+[value="sucursal3"]:checked ~ .posts__sucursales .post__sucursales:not([data-category~="sucursal3"]),
+[value="sucursal4"]:checked ~ .posts__sucursales .post__sucursales:not([data-category~="sucursal4"]) {
+    display: none;
+}
+
+[value="sucursal1"]:checked ~ .container-category [for="sucursal1"],
+[value="sucursal2"]:checked ~ .container-category [for="sucursal2"],
+[value="sucursal3"]:checked ~ .container-category [for="sucursal3"],
+[value="sucursal4"]:checked ~ .container-category [for="sucursal"]{
+    background: #5f5f5e;
+    color: #fff;
+}
+
+.container-category {
+    .label__sucursales{
+        background-color: #5f5f5e;
+        margin-bottom: 30px;
+        &:hover{
+            opacity: 0.5;
+            &:active{
+                background-color: rgb(2, 2, 2);
+            }
+        }
+    }
+}
+
+
+.card__sucursales{
+    width: auto;
+    height: 700px;
+    text-align:center;
+    margin-top: 40px;
+    img{
+        width: 500px;
+        height: 600px;
+    }
+}
+
+.posts__sucursales{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    iframe{
+        display: flex;
+    }
+}

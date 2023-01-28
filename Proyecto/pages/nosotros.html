@@ -19,19 +19,59 @@
         </ul>
         <img  class="logo_panerai" src="../img/descarga.png" alt="">
     </nav>
-    <h1>Quienes somos</h1>
-    <hr>
-    <br>
-    <main> 
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14159.442902252387!2d-58.99361087707268!3d-27.473594988372668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94450cc6bd32d72d%3A0xa117b6b13e62fad7!2sAv.%20L%C3%B3pez%20Piacentini%201457%2C%20Resistencia%2C%20Chaco!5e0!3m2!1ses!2sar!4v1668641896198!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <br>
-        <video src="" controls loop muted autoplay></video>
-        <br>
-        <audio src="" controls></audio>
-        <br>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/1t-HsmGi1JA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    <aside>
-        
-    </aside>
+    <div class="container-post">
+        <input type="radio" id="sucursal1" name="categories" value="sucursal1" checked>
+        <input type="radio" id="sucursal2" name="categories" value="sucursal2">
+        <input type="radio" id="sucursal3" name="categories" value="sucursal3">
+        <input type="radio" id="sucursal4" name="categories" value="sucursal4">
+
+        <div class="posts__sucursales">
+            <div class="post__sucursales" data-category="sucursal1">
+                <div class="card__sucursales" data-category="sucursal1">
+                    <img src="../img/sucursal1.jpg" alt="watch" >
+                    <div class="info__sucursales">
+                    <h1>Luminor Sumersible</h1>
+                    <p>descripcion del lugar</p>
+                    </div>
+                </div>
+            </div>
+            <div class="post__sucursales" data-category="sucursal2">
+                <div class="card__sucursales">
+                    <img src="../img/sucursal2.jpg" alt="watch" >
+                    <div class="info__sucursales">
+                    <h1>Luminor Sumersible</h1>
+                    <p>descripcion del lugar</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="post__sucursales" data-category="sucursal3">
+                <div class="card__sucursales">
+                    <img src="../img/sucursal3.jpg" alt="watch" >
+                    <div class="info__sucursales">
+                    <h1>Luminor Sumersible</h1>
+                    <p>descripcion del lugar</p>
+                    </div>
+                </div>
+            </div>
+            <div class="post__sucursales" data-category="sucursal4">
+                <div class="card__sucursales">
+                    <img src="../img/sucursal4.jpg" alt="watch" >
+                    <div class="info__sucursales">
+                    <h1>Luminor Sumersible</h1>
+                    <p>descripcion del lugar</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="container-category">
+            <label class="label__sucursales" for="sucursal1"></label>
+            <label class="label__sucursales" for="sucursal2"></label>
+            <label class="label__sucursales" for="sucursal3"></label>
+            <label class="label__sucursales" for="sucursal4"></label>
+        </div>
+
     <footer class="pie-pagina">
         <div class="grupo-footer">
             <div class="box">
@@ -61,6 +101,6 @@
             <small>&copy; 2022 <p>Camilo Enriquez</p> - Todos los derechos reservados.</small>
         </div>
     </footer>
-    </div>
+    
 </body>
 </html>

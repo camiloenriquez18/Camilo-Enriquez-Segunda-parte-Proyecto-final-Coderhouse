@@ -1,20 +1,15 @@
 .posts{
-    gap: 10px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 20px;
-    margin-bottom: 50px;
     justify-content: center;
-    .post{
-        margin-bottom: 100px;
-        justify-content: center;
-        display: flex;
-        flex-wrap: wrap;
+    margin-bottom: 30px;
         .card__productos{
             width: 250px;
             height: 500px;
             padding: 20px;
             border: 0;
+            margin: 0px;
             text-align: center;
                 h1 {
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -53,10 +48,54 @@
                 }
         }
     }
-}
+
 
 input[type="radio"]{
     display: none;
+}
+
+
+
+
+
+@media (max-width:535px){
+    .posts{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap:0;
+        margin-bottom: 20px;
+
+        .card__productos{
+            display: flex;
+            background-color: #f7f7f7;
+            height: 220px;
+            width: 270px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            padding: 20px;
+            gap: 15px;
+            margin-right: 0px;
+            img{
+                width: 130px;
+                height: 190px;
+            }
+            .info__card{
+                display: block;
+                margin-top: 20px;
+            }
+            .buttonvermas_cardproducto{
+                font-size: 13px;
+                padding: 5px 10px 5px;
+            }
+        }
+    }
+}
+
+
+.container-post{
+    max-width: 1200px;
+    margin: auto;
 }
 
 .container-category{
@@ -79,34 +118,4 @@ input[type="radio"]{
             opacity: 0.8;
         }
     }
-}
-
-@media (max-width:500px){
-    .posts{
-        .post{
-            margin-bottom: 0px;
-        .card__productos{
-            display: flex;
-            background-color: #f7f7f7;
-            height: 220px;
-            width: 270px;
-            border-radius: 10px;
-            margin-bottom: 15px;
-            padding: 20px;
-            gap: 15px;
-            img{
-                width: 130px;
-                height: 180px;
-            }
-            .info__card{
-                display: block;
-                margin-top: 20px;
-            }
-            .buttonvermas_cardproducto{
-                font-size: 13px;
-                padding: 5px 10px 5px;
-            }
-        }
-    }
-}
 }

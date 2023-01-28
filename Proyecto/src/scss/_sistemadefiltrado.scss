@@ -5,10 +5,10 @@
 }
 
 
-[value="automaticos"]:checked ~ .posts .post:not([data-category~="automaticos"]),
-[value="movimientodecuarzo"]:checked ~ .posts .post:not([data-category~="movimientodecuarzo"]),
-[value="malladeacero"]:checked ~ .posts .post:not([data-category~="malladeacero"]),
-[value="correadecuero"]:checked ~ .posts .post:not([data-category~="correadecuero"]) {
+[value="automaticos"]:checked ~ .posts .card__productos:not([data-category~="automaticos"]),
+[value="movimientodecuarzo"]:checked ~ .posts .card__productos:not([data-category~="movimientodecuarzo"]),
+[value="malladeacero"]:checked ~ .posts .card__productos:not([data-category~="malladeacero"]),
+[value="correadecuero"]:checked ~ .posts .card__productos:not([data-category~="correadecuero"]) {
     display: none;
 }
 
