@@ -29,22 +29,16 @@
     justify-content: center;
     background-color: #000;
     display: flex;
-    > .container_p{
-        width: 100%;
-        max-width: 1200px;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        margin: 1px;
-        padding: 10px;
-        background-color: #000;
+    flex-wrap: wrap;
+    height: 600px;
+    width: 100%;
+    gap: 30px;
     .card_p{
-        width: 285px;
-        height: 400px;
+        width: 240px;
+        height: 500px;
         border-radius: 8px;
         text-align: center;
         transition: all 0.25s;
-        margin:30px auto;
         color: #000;
         border-color: black ;
         background-color: rgb(22, 22, 22);
@@ -52,12 +46,12 @@
         img{
             margin-top: 20px;
             width: 100%;
-            height: 220px;
+            height: 320px;
         }
         h4{
             font-weight: 600;
             padding: 10px;
-            font-size: 1.5em;
+            font-size: 18px;
             color: #fbfae6;
         }
         p{
@@ -75,8 +69,8 @@
         }
         
     }
-    }
 }
+
 
 .container_p .card_p:hover{
     transform: translateY(-15px);
@@ -84,10 +78,56 @@
 }
 
 @media(max-width:865px) {
-    .container_p {
-        display: flex;
-        flex-direction: column;
+    .cards_p {
+        height: 400px;
+        width: 100%;
+        gap: 30px;
+        .card_p{
+            width: 160px;
+            height: 320px;
+            border-radius: 8px;
+            img{
+                margin-top: 20px;
+                width: 100%;
+                height: 160px;
+            }
+            h4{
+                font-weight: 600;
+                padding: 10px;
+                font-size: 14px;
+                color: #fbfae6;
+            }
+            p{
+                padding: 0 1rem;
+                font-size: 1px;
+                font-weight: 300;
+                color: #fbfae6;
+                
+            }
+            a {
+                font-weight: 500;
+                text-decoration: none;
+                color: #3498db;
+                padding: 10px;
+            }
+            
+        }
     }
+}
+
+@media(max-width:574px) {
+    .cards_p {
+        height: auto;
+        width: 100%;
+        gap: 30px;
+        padding-bottom: 20px;
+        .card_p{
+            margin-top: 20px;
+            > img{
+                height: 180px;
+            }
+        }
+}
 
 @media(max-width:399px) {
     .container_p .card_p{
